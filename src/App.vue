@@ -12,18 +12,18 @@ const list = ref<Array<{ id: number; label: string }>>([])
 
 const getLabel = (index: number) => {
   if (index % 4 === 0) {
-    return '历经一年的迭代，Vant 4.0 版本已正式发布，这是 Vant 自 2017 年开源以来发布的第四个重要版本。在本次迭代中，Vant 支持了深色模式，增加五个新组件，改善工具函数 API 并重构 Picker 等组件，同时继续在轻量化和易用性方面做出改进。历经一年的迭代，Vant 4.0 版本已正式发布，这是 Vant 自 2017 年开源以来发布的第四个重要版本。在本次迭代中，Vant 支持了深色模式，增加五个新组件，改善工具函数 API 并重构 Picker 等组件，同时继续在轻量化和易用性方面做出改进。历经一年的迭代，Vant 4.0 版本已正式发布，这是 Vant 自 2017 年开源以来发布的第四个重要版本。在本次迭代中，Vant 支持了深色模式，增加五个新组件，改善工具函数 API 并重构 Picker 等组件，同时继续在轻量化和易用性方面做出改进。历经一年的迭代，Vant 4.0 版本已正式发布，这是 Vant 自 2017 年开源以来发布的第四个重要版本。在本次迭代中，Vant 支持了深色模式，增加五个新组件，改善工具函数 API 并重构 Picker 等组件，同时继续在轻量化和易用性方面做出改进'
+    return 'It is a known fact that the right styleguide can significantly increase development speed, debugging, and the implementation of new features in legacy code. Sadly, most CSS codebases are sometimes developed without any structure or naming conventions. This leads to an unmaintainable CSS codebase in the long term.'
   }
 
   if (index % 3 === 0) {
-    return '在构建现代网络体验时，如果您希望获得快速的体验并加以维持，那么对网站进行衡量、优化和监控就显得至关重要。性能对于任何线上项目的成功都起着重要作用，'
+    return 'The BEM approach ensures that everyone who participates in the development of a website works with a single codebase and speaks the same language. Using proper naming will prepare you for the changes in design of the website.'
   }
 
   if (index % 2 === 0) {
-    return '如果华佗再世,崇洋都被医治,外邦来学汉字,激发我民族意识。马钱子、决明子、苍耳子，还有莲子；黄药子、苦豆子、川楝子，我要面子。用我的方式，改写一部历史。没什么别的事，跟着我念几个字。山药当归枸杞 GO，山药 当归 枸杞 GO，看我抓一把中药，服下一帖骄傲~'
+    return 'Parts of a block and have no standalone meaning. Any element is semantically tied to its block.'
   }
 
-  return '并帮助您采取正确的步骤来提高性能'
+  return 'On smaller brochure sites, how you organize your styles isn’t usually a big concern. You get in there, write some CSS, or maybe even some SASS. You compile it all into a single stylesheet with SASS’s production settings, and then you aggregate it to get all the stylesheets from modules into a nice tidy package.However, when it comes to larger, more complex projects, how you organize your code is the key to efficiency in at least these three ways: it affects how long it takes you to write code, how much of that code you’ll have to write and how much loading your browser will have to do. This becomes especially important when you’re working with teams of themers, and when high performance is essential.'
 }
 
 onMounted(() => {

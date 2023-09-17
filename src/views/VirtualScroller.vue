@@ -13,8 +13,9 @@
       class="infinite-list"
       :style="{ transform: `translate3d(0, ${startOffset}px, 0)` }"
     >
-      <div class="infinite-list-item" v-for="item in visibleData" :key="item.id">
-        {{ item.label }}
+      <div class="infinite-list-item" v-for="(item, index) in visibleData" :key="item.id">
+        <div>Item - {{ items[start + index].id }}</div>
+        <div>{{ item.label }}</div>
       </div>
     </div>
   </div>
@@ -40,7 +41,7 @@ const props = defineProps({
   },
   estimateHeight: {
     type: Number,
-    default: 60
+    default: 130
   }
 })
 
@@ -165,9 +166,21 @@ onUpdated(() => {
 .infinite-list-item {
   padding: 10px;
   overflow: hidden;
-  text-align: center;
   color: #555;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+
+.infinite-list-item div:first-child {
+  font-size: 18px;
+  padding: 10px 0;
+  color: rgba(0, 0, 0, 0, 85);
+  font-weight: 500;
+}
+
+.infinite-list-item div:last-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0, 50);
 }
 </style>
